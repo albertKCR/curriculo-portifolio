@@ -28,7 +28,7 @@
             padding: 2vh 5vw;
             padding-bottom: 0;
             height: 10vh;
-            font-size: 3.2vh;
+            font-size: 2.8vh;
             font-family: monospace;
             color: whitesmoke;
             line-height: 140%;
@@ -172,7 +172,18 @@
             color: white;
             font-size: 30px;    
         }
-        #profile-link{}
+        #profile-link{
+            text-decoration: none;
+            font-family: monospace;
+            color: black;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        #icon-img{
+            height: 30px;
+            vertical-align: -4px;
+            padding-top: 70px;
+        }
         #t1{
             font-family: sans-serif;
             font-size: 70px;
@@ -211,7 +222,31 @@
             display: block;
             background-color: #D25062;
             width: 100%;
-            height: 30vw;
+            height: 40vh;
+            text-align: center;
+        }
+        #contato-title{
+            color: white;
+            font-family: monospace;
+            font-size: 40px;
+            padding-top: 20px; 
+        }
+        body{
+            background-color: #be3144;
+        }
+        footer{
+            margin-top: 5px;
+            background-color: black;
+            height: 70px;
+            width: 100%;
+        }
+        #footer-txt{
+            color: white;
+            text-align: right;
+            font-family: monospace;
+            font-size: 17px;
+            margin-right: 20px;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -277,9 +312,18 @@
         <a target="_blank" href="https://codepen.io/sketyyy" id="b1">Ver todos</a>
     </section>
     <section id="contato">
-        
+        <h1 id="contato-title">Contato</h1>
+        <a target="_blank" href="https://github.com/albertKCR" id="profile-link">
+            <img id="icon-img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github">
+            Git Hub
+        </a>
+        <a style="margin-left: 50px;" href="tel:46999324365" id="profile-link">
+            <img id="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/1200px-Smartphone_icon_-_Noun_Project_283536.svg.png" alt="phone">
+            Celular
+        </a>
     </section>
     <footer>
+        <p id="footer-txt">Albert Kirchner, 2022.</p>
     </footer>
 </body>
 </html>
